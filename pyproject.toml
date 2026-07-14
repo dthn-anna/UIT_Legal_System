@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "school-regulation-rag-e5"
+version = "0.1.0"
+description = "Hybrid RAG API for Vietnamese school regulations using multilingual-E5-base and BM25"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "fastapi>=0.115,<1.0",
+  "uvicorn[standard]>=0.34,<1.0",
+  "pydantic>=2.10,<3.0",
+  "pydantic-settings>=2.7,<3.0",
+  "sentence-transformers>=5.0,<6.0",
+  "transformers>=4.51,<5.0",
+  "torch>=2.5",
+  "numpy>=1.26,<3.0",
+  "pandas>=2.2,<3.0",
+  "pyarrow>=18,<22",
+  "bm25s>=0.2.10,<1.0",
+  "supabase>=2.13,<3.0",
+  "httpx>=0.28,<1.0",
+  "orjson>=3.10,<4.0",
+  "tenacity>=9.0,<10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9.0",
+  "pytest-asyncio>=0.25,<1.0",
+  "ruff>=0.9,<1.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

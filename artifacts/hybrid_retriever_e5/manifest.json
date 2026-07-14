@@ -1,0 +1,152 @@
+{
+  "artifact": {
+    "artifact_name": "school-regulation-hybrid-retriever-e5",
+    "created_at_utc": "2026-07-13T07:16:27.457369+00:00",
+    "base_model": "intfloat/multilingual-e5-base",
+    "corpus_rows": 1045,
+    "embedding_dimension": 768,
+    "corpus_field": "embedding_text"
+  },
+  "files": [
+    {
+      "path": "bm25_corpus.jsonl",
+      "size_bytes": 2278508,
+      "sha256": "33622e6b4ce6a8a1d7c413cc4157e1fb1a08e03c4b5b480d0faca841cc2db8c2"
+    },
+    {
+      "path": "bm25_index/data.csc.index.npy",
+      "size_bytes": 533160,
+      "sha256": "d6b39ab154f6b7c4d38ecc227abfc0f9d9d69c9e011671f624e51dbdb83856eb"
+    },
+    {
+      "path": "bm25_index/indices.csc.index.npy",
+      "size_bytes": 533160,
+      "sha256": "32261e7b4d573f03b4531f91fc6a0938cb885ccf40725ec1406fb66ede37f45b"
+    },
+    {
+      "path": "bm25_index/indptr.csc.index.npy",
+      "size_bytes": 11152,
+      "sha256": "61c6af023374b49e7c03e4b075ca13caae504f87f49845f618730744dc0ff051"
+    },
+    {
+      "path": "bm25_index/params.index.json",
+      "size_bytes": 222,
+      "sha256": "c21c327824aef240351fddbcd72213a36d2447d4b27aceafb34e3058f7716ed0"
+    },
+    {
+      "path": "bm25_index/vocab.index.json",
+      "size_bytes": 16459,
+      "sha256": "ed6ac457f24312c8cf7ab8094c7a7e2a9053321bbde98c9eba0cc99cb2264ed3"
+    },
+    {
+      "path": "corpus_embeddings.npy",
+      "size_bytes": 3210368,
+      "sha256": "efacffeec7097bd6817eedc95da6692d19ef54904b7df9c66886080ed2a54eb9"
+    },
+    {
+      "path": "dense_model/1_Pooling/config.json",
+      "size_bytes": 90,
+      "sha256": "8759bdf7c77efc7df7723f64856a593c8943b71ee38baf2a88771fbaf78438f9"
+    },
+    {
+      "path": "dense_model/README.md",
+      "size_bytes": 199043,
+      "sha256": "5be2b3e0f2248b34614722c4b7b53ec16fc3bb7dc6ac6b51bbb81b4543c60ad7"
+    },
+    {
+      "path": "dense_model/config.json",
+      "size_bytes": 744,
+      "sha256": "a4edb11723493c38a7868197d9ba0a649e4a15491c248dba526998b7459a18e6"
+    },
+    {
+      "path": "dense_model/config_sentence_transformers.json",
+      "size_bytes": 284,
+      "sha256": "5ff91d193219d17a24cca51647a6b57e44628adddd15abeba0ec9fd5e417dbe1"
+    },
+    {
+      "path": "dense_model/model.safetensors",
+      "size_bytes": 556109872,
+      "sha256": "b22aa2c565bd9bee4024c7a87c7c5a0ba24e0b7690ad1a558dceffe5a69242fb"
+    },
+    {
+      "path": "dense_model/modules.json",
+      "size_bytes": 429,
+      "sha256": "fa7d796a215e1b2416773062891923b191fc5a4849bc44e322997433c90f459c"
+    },
+    {
+      "path": "dense_model/optimizer.pt",
+      "size_bytes": 1109980299,
+      "sha256": "3feb0c9e88796806af091b7963cb6e9aee8cc91aadaf2cfad7fe7bf161b7b449"
+    },
+    {
+      "path": "dense_model/rng_state.pth",
+      "size_bytes": 14645,
+      "sha256": "68b64f22b394b9de912c37cf14303110b250a9a78aaef7e9b5b2b86d0f99306e"
+    },
+    {
+      "path": "dense_model/scheduler.pt",
+      "size_bytes": 1465,
+      "sha256": "807289f0d5ff2bfd28274fc68d3a497eea11eb0a2b691f29fa5c8c6495c86960"
+    },
+    {
+      "path": "dense_model/sentence_bert_config.json",
+      "size_bytes": 241,
+      "sha256": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8"
+    },
+    {
+      "path": "dense_model/tokenizer.json",
+      "size_bytes": 17082987,
+      "sha256": "883b037111086fd4dfebbbc9b7cee11e1517b5e0c0514879478661440f137085"
+    },
+    {
+      "path": "dense_model/tokenizer_config.json",
+      "size_bytes": 383,
+      "sha256": "e06e4c713f57b185222e34ad0deed56baa1b4e4aa2edef8f33e3f794e4cfd5ab"
+    },
+    {
+      "path": "dense_model/trainer_state.json",
+      "size_bytes": 11964,
+      "sha256": "9eaf9a5490ea2f98e3cb87f6573f448960998cdfb465d5fd33f731e26fe4d178"
+    },
+    {
+      "path": "dense_model/training_args.bin",
+      "size_bytes": 5713,
+      "sha256": "b1a83f08222a1d654de976c9f77ca8d77b107832ba38b1d969f8b4f3172eea19"
+    },
+    {
+      "path": "passage_metadata.jsonl",
+      "size_bytes": 4752898,
+      "sha256": "ab32fa30aaf0891cda39478a66e770a02429faeba4b03ffb3f77c29cb12a00f8"
+    },
+    {
+      "path": "passage_metadata.parquet",
+      "size_bytes": 1072477,
+      "sha256": "173f5d7ceedbec37b5bb1bab19e8752594a6f2b85c006a880d5e1e06b8e2054b"
+    },
+    {
+      "path": "retriever_config.json",
+      "size_bytes": 931,
+      "sha256": "37c57a6f88d64c191c3ce636cc34b3c13ae91d6908f1c6151eda7028e25a39c5"
+    },
+    {
+      "path": "supabase_import.jsonl",
+      "size_bytes": 18618335,
+      "sha256": "44d7abe0e08bc28b0a7be97e17d23ffd3dfe2610db15a7decd2aaaaed106f3fe"
+    },
+    {
+      "path": "supabase_import.parquet",
+      "size_bytes": 2348516,
+      "sha256": "69855c2e0b36e1e87f722c9b664d8fd7f5ae3c9f8680b6130a4e963b6e8527fe"
+    },
+    {
+      "path": "supabase_schema.sql",
+      "size_bytes": 1174,
+      "sha256": "f7246de09b18cabf10b43d991c8ec28968c4712bebe403e115588a13f47d8275"
+    },
+    {
+      "path": "version.json",
+      "size_bytes": 256,
+      "sha256": "09c17eb781181510df033f8abbd3c3395cf6eadf4d5188d42212f12024bc8546"
+    }
+  ]
+}

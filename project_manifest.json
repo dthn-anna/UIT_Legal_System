@@ -1,0 +1,7 @@
+{
+  "project": "school-regulation-rag-e5",
+  "embedding_model": "intfloat/multilingual-e5-base",
+  "embedding_dimension": 768,
+  "artifact_dir": "artifacts/hybrid_retriever_e5",
+  "generator": "Qwen configurable via local_hf or openai_compatible"
+}

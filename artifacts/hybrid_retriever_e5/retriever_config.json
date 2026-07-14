@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "retriever_type": "hybrid_dense_bm25_rrf",
+  "model_key": "multilingual_e5_base_finetuned",
+  "dense_model_path": "dense_model",
+  "corpus_embeddings_path": "corpus_embeddings.npy",
+  "passage_metadata_path": "passage_metadata.parquet",
+  "bm25_index_path": "bm25_index",
+  "bm25_corpus_path": "bm25_corpus.jsonl",
+  "supabase_import_path": "supabase_import.parquet",
+  "query_instruction": "",
+  "query_format": "query: {question}",
+  "passage_format": "passage: {passage}",
+  "corpus_field": "embedding_text",
+  "max_query_length": 128,
+  "max_passage_length": 512,
+  "embedding_dimension": 768,
+  "normalize_embeddings": true,
+  "similarity": "cosine",
+  "dense_top_k": 30,
+  "bm25_top_k": 30,
+  "final_top_k": 8,
+  "fusion": {
+    "method": "reciprocal_rank_fusion",
+    "rrf_k": 30
+  },
+  "bm25": {
+    "library": "bm25s",
+    "method": "lucene",
+    "stopwords": null,
+    "stemmer": null
+  }
+}

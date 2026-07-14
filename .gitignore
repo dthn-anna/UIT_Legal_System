@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+.venv/
+venv/
+
+# Conda
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notebook
+.ipynb_checkpoints/
+
+# Build
+dist/
+build/
+
+# Large artifacts
+artifacts/hybrid_retriever_e5/corpus_embeddings.npy
+
+# nếu model quá lớn
+artifacts/hybrid_retriever_e5/dense_model/
+
+# nếu BM25 index quá lớn
+artifacts/hybrid_retriever_e5/bm25_index/

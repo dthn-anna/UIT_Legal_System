@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UIT Legal Assistant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="/frontend/style.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">UIT</div>
+
+        <div>
+          <div class="brand-text">Legal Assistant</div>
+          <div class="brand-subtitle">School Regulation RAG</div>
+        </div>
+      </div>
+
+      <div class="sidebar-menu">
+        <button
+          id="new-chat-btn"
+          class="new-chat-btn"
+          type="button"
+        >
+          <span class="icon">+</span>
+          Cuộc hội thoại mới
+        </button>
+      </div>
+
+      <section class="info-section">
+        <h3>Hệ thống truy xuất</h3>
+
+        <p>
+          Dense Retriever sử dụng multilingual-E5 đã fine-tune.
+          BM25 hỗ trợ truy xuất từ khóa và hai kết quả được hợp nhất bằng RRF.
+        </p>
+
+        <div class="stack-list">
+          <div class="stack-item">
+            <span>Dense</span>
+            <strong>E5-base</strong>
+          </div>
+
+          <div class="stack-item">
+            <span>Sparse</span>
+            <strong>BM25S</strong>
+          </div>
+
+          <div class="stack-item">
+            <span>Fusion</span>
+            <strong>RRF</strong>
+          </div>
+
+          <div class="stack-item">
+            <span>Generator</span>
+            <strong>Ollama</strong>
+          </div>
+        </div>
+      </section>
+
+      <div class="sidebar-footer">
+        <p>© 2026 UIT Legal System</p>
+        <span class="badge">E5 + Ollama</span>
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <header class="chat-header">
+        <div class="header-info">
+          <h1>Hỏi đáp Quy chế Giáo dục Đại học</h1>
+
+          <div
+            id="status-indicator"
+            class="status-indicator"
+            aria-live="polite"
+          >
+            <span class="dot checking"></span>
+            Đang kiểm tra hệ thống...
+          </div>
+        </div>
+      </header>
+
+      <section
+        id="messages-container"
+        class="messages-container"
+        aria-live="polite"
+      ></section>
+
+      <footer class="input-area">
+        <form
+          id="chat-form"
+          class="input-wrapper"
+        >
+          <textarea
+            id="user-input"
+            rows="1"
+            maxlength="2000"
+            placeholder="Nhập câu hỏi về quy định, quy chế..."
+            aria-label="Câu hỏi"
+          ></textarea>
+
+          <button
+            id="send-btn"
+            type="submit"
+          >
+            Gửi
+          </button>
+        </form>
+
+        <p class="input-tip">
+          Câu trả lời được tạo từ các đoạn quy định do Hybrid Retriever truy xuất.
+          Hãy kiểm tra nguồn trích dẫn trước khi sử dụng.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
